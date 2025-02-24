@@ -1,0 +1,39 @@
+# application.yml
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/student_management?createDatabaseIfNotExist=true
+    username: root
+    password: 12345678
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
+  server:
+    port: 8099
+
+  ai:
+    vectorstore:
+      milvus:
+        client:
+          host: "localhost"
+          port: 19530
+          username: "root"  # Optional, typically not needed for Milvus
+          password: "milvus"  # Optional, typically not needed for Milvus
+        databaseName: "default"
+        collectionName: "STUDENT_MANAGEMENT"
+        embeddingDimension: 1536
+        indexType: IVF_FLAT
+        metricType: COSINE
+
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML
+
+# Additional configurations can be added here

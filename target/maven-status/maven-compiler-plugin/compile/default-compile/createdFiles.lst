@@ -1,0 +1,9 @@
+com/example/studentmanagment/Student_Managment/service/GroqAiHelperService.class
+com/example/studentmanagment/Student_Managment/service/StudentService.class
+com/example/studentmanagment/Student_Managment/Controller/StudentController.class
+com/example/studentmanagment/Student_Managment/service/StudentServiceImpl.class
+com/example/studentmanagment/Student_Managment/repo/StudentRepository.class
+com/example/studentmanagment/Student_Managment/model/Student.class
+com/example/studentmanagment/Student_Managment/config/Config.class
+com/example/studentmanagment/Student_Managment/StudentManagmentApplication.class
+com/example/studentmanagment/Student_Managment/service/AppConfig.class
